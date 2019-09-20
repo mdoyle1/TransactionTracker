@@ -8,6 +8,8 @@
 
 import Foundation
 
+var catagoryArray:[String] = []
+
 public var HEADERS:Set<String>=[
     "Description"
 ]
@@ -16,8 +18,11 @@ public var headersLength=HEADERS.count
 public var GAS:Set<String>=[
     "SUNOCO",
     "CUMBERLAND",
-    "MOBIL"
-   
+    "MOBIL",
+    "BESTWAY",
+    "AMORE FUEL",
+    "CHUCKY'S",
+    "GULF"
 ]
 public var gasLength=GAS.count
 public var gasTransactions = [[String:String]]()
@@ -25,8 +30,8 @@ public var gasTransactions = [[String:String]]()
 public var SHOPPING:Set<String>=[
     "PETCO",
     "DOLLAR GENERAL",
-    "HOME DEPOT"
-    
+    "HOME DEPOT",
+   
 ]
 public var shoppingLength=SHOPPING.count
 public var shoppingTransactions = [[String:String]]()
@@ -34,32 +39,23 @@ public var shoppingTransactions = [[String:String]]()
 public var FASTFOOD:Set<String>=[
     "MCDONALD'S",
     "DUNKIN",
-    "BAKERS DOZEN"
+    "BAKERS DOZEN",
+    "STARBUCKS",
     
 ]
 public var fastfoodLength=FASTFOOD.count
 public var fastfoodTransactions = [[String:String]]()
 
 public var MEDICAL:Set<String>=[
-    "GASTRO",
-    "GYNECOL"
-   
+    "PARTNERS HEALTHCAR",
+    "YALE"
 ]
 public var medicalLength=MEDICAL.count
 public var medicalTransactions = [[String:String]]()
 
 public var GROCERY:Set<String>=[
     "BETTER-VALU",
-    "WAL-MART",
-    "BIG Y",
-    "ALDI",
-    "WM SUPERCENTER",
-    "BOOZE BARN",
-    "BROAD BROOK",
-    "RISING MOON",
-    "STOP & SHOP",
-    "WHOLEFDS",
-    "WAL Wal-Mart S"
+    "WAL-MART"
 ]
 public var groceryLength=GROCERY.count
 public var groceryTransactions = [[String:String]]()
@@ -71,25 +67,33 @@ public var withdrawelsTransactions = [[String:String]]()
 
 public var DEPOSITS:Set<String>=[
     "PAYROLL",
-    "DDA DEBIT",
-    "TO SAVINGS",
-    "Zelle*Kelly",
-    "BALBLDR BONUS"
+    "DDA DEBIT"
 ]
 public var depositsLength=DEPOSITS.count
 public var depositsTransactions = [[String:String]]()
 
 public var BILLS:Set<String>=[
     "ITUNES",
-    "FAMILY MOB",
-    "EVERSOURCE"
+    "Amazon Prime",
+    "ATM FEE",
 ]
 public var billLength=BILLS.count
 public var billTransactions = [[String:String]]()
 
 public var PLACES:Set<String>=[
     "JUMP OFF",
-    "SOUTHWICK`S ZOO"
+    "SOUTHWICK`S ZOO",
+    "BOUNCE",
+    "SANTAS VILLAGE",
+    "SKATE INN",
+    "CITY OF MIDDLETOWN",
+    "GILLETTE CASTLE",
+    "QUESTERS WAY",
+    "THE KIDCITY",
+    "RESIDENCE INN",
+    "The Kidcity",
+    "TOP OF THE ROCK",
+    "YMCA",
 ]
 public var placesLength=PLACES.count
 public var placesTransactions = [[String:String]]()
@@ -100,6 +104,8 @@ public var BANKTRANSFERS:Set<String>=[
 ]
 public var bankTransfers=BANKTRANSFERS.count
 public var bankTransactions = [[String:String]]()
+
+public var listItems:[String] = ["Gas","Shopping","Fastfood","Medical","Grocery","Withdrawels","Bills","Places","Banktransfers","Deposits"]
 
 public var TRANSACTIONS:Set = [GAS, SHOPPING, FASTFOOD, MEDICAL, GROCERY, WITHDRAWELS, BILLS, PLACES, BANKTRANSFERS, DEPOSITS]
 public var transactionsLength=TRANSACTIONS.count

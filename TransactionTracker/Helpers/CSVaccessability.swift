@@ -19,6 +19,7 @@ class CSVaccessability {
     func makeCSVaccessable() {
         //Gets the headers row from the CSV
         headers = csvData[0]
+        print(headers)
      
         //For Row in CSV (Skips header row and removes last row..)
     for r in 1..<csvData.count-1{
